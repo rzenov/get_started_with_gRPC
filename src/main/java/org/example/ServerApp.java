@@ -18,7 +18,7 @@ public class ServerApp {
                 .addService(new FileServiceImpl())
                 .build();
         server.start();
-        System.out.println("Server is started");
+        System.out.println("Server is started on " + DEFAULT_GRPC_PORT + " port.");
         server.awaitTermination();
     }
 }
