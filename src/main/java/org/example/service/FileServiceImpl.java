@@ -15,7 +15,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 public class FileServiceImpl extends FileServiceGrpc.FileServiceImplBase {
-    private static final Path SERVER_BASE_PATH = Paths.get("/output");
+    private static final Path SERVER_BASE_PATH = Paths.get("output");
 
     @Override
     public StreamObserver<FileUploadRequest> upload(StreamObserver<FileUploadResponse> responseObserver) {
