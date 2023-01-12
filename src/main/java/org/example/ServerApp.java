@@ -11,8 +11,9 @@ import java.io.IOException;
  * Hello world!
  */
 public class ServerApp {
+    private final static int DEFAULT_GRPC_PORT = 6565;
     public static void main(String[] args) throws IOException, InterruptedException {
-        Server server = ServerBuilder.forPort(8080)
+        Server server = ServerBuilder.forPort(DEFAULT_GRPC_PORT)
                 .addService(new GreetingServiceImpl())
                 .addService(new FileServiceImpl())
                 .build();
