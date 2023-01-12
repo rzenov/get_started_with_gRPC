@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Hello world!
  */
-public class App {
+public class ServerApp {
     public static void main(String[] args) throws IOException, InterruptedException {
         Server server = ServerBuilder.forPort(8080)
                 .addService(new GreetingServiceImpl())
